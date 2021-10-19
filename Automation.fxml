@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="com.chris.jfxdemo.AutomationController" >
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <top>
+      <BorderPane focusTraversable="true" prefHeight="24.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <center>
+            <TextField BorderPane.alignment="CENTER" fx:id="path" editable="false" />
+         </center>
+         <right>
+            <Button mnemonicParsing="false" text="Process" BorderPane.alignment="CENTER" fx:id="process">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </Button>
+         </right>
+         <left>
+            <Button mnemonicParsing="false" text="Browse ..." BorderPane.alignment="CENTER" fx:id="browse" onAction="#onBrowseButtonClick">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+      </BorderPane>
+   </top>
+   <center>
+      <TextArea editable="false" prefHeight="360.0" prefWidth="600.0" BorderPane.alignment="CENTER" fx:id="messageBoard" />
+   </center>
+</BorderPane>
